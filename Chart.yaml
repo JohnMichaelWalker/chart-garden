@@ -2,4 +2,4 @@ apiVersion: v2
 name: garden
 description: Simple HTTP echo test chart
 type: application
-version: 0.0.1
+version: 0.0.2
