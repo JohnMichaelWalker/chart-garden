@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petunia-service-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: petunia-service
+  template:
+    metadata:
+      labels:
+        app: petunia-service
+      name: petunia-service
+    spec:
+      containers:
+        - name: petunia-service
+          image: johnwalker333/petunia-service
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
