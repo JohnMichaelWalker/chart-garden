@@ -4,7 +4,7 @@ metadata:
   name: garden-service
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-west-2:123456789012:certificate/abc-123      # <-- your cert ARN
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:eu-west-2:022239501643:certificate/d0c42ca1-7987-4be8-a011-712374630522"
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
 spec:
   type: LoadBalancer
