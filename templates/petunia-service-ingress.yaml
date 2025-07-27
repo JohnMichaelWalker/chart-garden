@@ -8,7 +8,7 @@ spec:
     - host: johnwalkers.com
       http:
         paths:
-          - path: /garden
+          - path: /petunia
             pathType: Prefix
             backend:
               service:
