@@ -12,6 +12,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: garden-service
+                name: petunia-service
                 port:
                   number: 80
